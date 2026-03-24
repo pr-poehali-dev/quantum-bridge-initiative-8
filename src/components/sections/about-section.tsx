@@ -22,7 +22,7 @@ export function AboutSection({ scrollToSection }: { scrollToSection?: (index: nu
                 <br />
                 Университете
                 <br />
-                <span className="text-foreground/40">ВГАВТ</span>
+                <span className="text-foreground/40">ВГУВТ</span>
               </h2>
             </div>
 
@@ -33,19 +33,19 @@ export function AboutSection({ scrollToSection }: { scrollToSection?: (index: nu
               style={{ transitionDelay: "200ms" }}
             >
               <p className="max-w-md text-sm leading-relaxed text-foreground/90 md:text-lg">
-                Волжский государственный университет водного транспорта — ведущий вуз России в области подготовки специалистов для речного и морского флота.
+                Самарский филиал Волжского государственного университета водного транспорта — образовательное учреждение с более чем 85-летней историей.
               </p>
               <p className="max-w-md text-sm leading-relaxed text-foreground/90 md:text-lg">
-                С 1930 года мы формируем профессиональную элиту водного транспорта страны, сочетая академические традиции с современными технологиями.
+                Предоставляем студентам возможность развиваться в сфере водного транспорта и участвовать в обеспечении бесперебойной работы ключевых портов Самарской области.
               </p>
             </div>
           </div>
 
           <div className="flex flex-col justify-center space-y-6 md:space-y-12">
             {[
-              { value: "90+", label: "Лет", sublabel: "Истории и традиций", direction: "right" },
-              { value: "15 000", label: "Выпускников", sublabel: "Работают по всей России", direction: "left" },
-              { value: "40+", label: "Специальностей", sublabel: "Бакалавриат и магистратура", direction: "right" },
+              { value: "85+", label: "Лет", sublabel: "Истории и традиций", direction: "right" },
+              { value: "3", label: "Программы", sublabel: "Бакалавриат очного обучения", direction: "left" },
+              { value: "Самара", label: "Город", sublabel: "ул. Неверова, д. 87/35", direction: "right" },
             ].map((stat, i) => {
               const getRevealClass = () => {
                 if (!isVisible) {

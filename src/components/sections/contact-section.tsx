@@ -45,7 +45,7 @@ export function ContactSection() {
 
             <div className="space-y-4 md:space-y-8">
               <a
-                href="mailto:priemkom@vsuwt.ru"
+                href="mailto:mail.ru"
                 className={`group block transition-all duration-700 ${
                   isVisible ? "translate-x-0 opacity-100" : "-translate-x-16 opacity-0"
                 }`}
@@ -53,10 +53,10 @@ export function ContactSection() {
               >
                 <div className="mb-1 flex items-center gap-2">
                   <Icon name="Mail" className="h-3 w-3 text-foreground/60" />
-                  <span className="font-mono text-xs text-foreground/60">Приёмная комиссия</span>
+                  <span className="font-mono text-xs text-foreground/60">Электронная почта</span>
                 </div>
                 <p className="text-base text-foreground transition-colors group-hover:text-foreground/70 md:text-2xl">
-                  priemkom@vsuwt.ru
+                  mail.ru
                 </p>
               </a>
 
@@ -70,7 +70,7 @@ export function ContactSection() {
                   <Icon name="Phone" className="h-3 w-3 text-foreground/60" />
                   <span className="font-mono text-xs text-foreground/60">Телефон</span>
                 </div>
-                <p className="text-base text-foreground md:text-2xl">+7 (831) 419-72-56</p>
+                <p className="text-base text-foreground md:text-2xl">+7 (846) 276-86-93</p>
               </div>
 
               <div
@@ -83,7 +83,7 @@ export function ContactSection() {
                   <Icon name="MapPin" className="h-3 w-3 text-foreground/60" />
                   <span className="font-mono text-xs text-foreground/60">Адрес</span>
                 </div>
-                <p className="text-base text-foreground md:text-2xl">Нижний Новгород, ул. Нестерова, 5</p>
+                <p className="text-base text-foreground md:text-2xl">г. Самара, ул. Неверова, д. 87/35</p>
               </div>
 
               <div
@@ -92,13 +92,18 @@ export function ContactSection() {
                 }`}
                 style={{ transitionDelay: "500ms" }}
               >
-                {["ВКонтакте", "Telegram", "YouTube"].map((social) => (
+                {[
+                  { label: "ВКонтакте", href: "https://vk.com/public_samara_vguvt777" },
+                  { label: "Сайт", href: "https://samara.vsuwt.ru" },
+                ].map((social) => (
                   <a
-                    key={social}
-                    href="#"
+                    key={social.label}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="border-b border-transparent font-mono text-xs text-foreground/60 transition-all hover:border-foreground/60 hover:text-foreground/90"
                   >
-                    {social}
+                    {social.label}
                   </a>
                 ))}
               </div>

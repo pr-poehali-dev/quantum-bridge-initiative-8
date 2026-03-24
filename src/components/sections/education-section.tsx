@@ -25,31 +25,24 @@ export function EducationSection({ scrollToSection }: { scrollToSection?: (index
           {[
             {
               number: "01",
-              title: "Судовождение",
-              category: "Бакалавриат · 4 года",
+              title: "Судовождение на морских и внутренних водных путях",
+              category: "Бакалавриат · очная форма",
               year: "ЕГЭ",
               direction: "left",
             },
             {
               number: "02",
               title: "Эксплуатация судовых энергетических установок",
-              category: "Бакалавриат · 4 года",
+              category: "Бакалавриат · очная форма",
               year: "ЕГЭ",
               direction: "right",
             },
             {
               number: "03",
-              title: "Портовое и транспортное строительство",
-              category: "Бакалавриат · 4 года",
+              title: "Эксплуатация судового электрооборудования и средств автоматики",
+              category: "Бакалавриат · очная форма",
               year: "ЕГЭ",
               direction: "left",
-            },
-            {
-              number: "04",
-              title: "Экономика и управление на транспорте",
-              category: "Бакалавриат / Магистратура",
-              year: "ЕГЭ",
-              direction: "right",
             },
           ].map((item, i) => (
             <EducationCard key={i} item={item} index={i} isVisible={isVisible} />
