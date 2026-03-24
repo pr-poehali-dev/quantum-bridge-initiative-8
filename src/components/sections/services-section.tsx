@@ -15,31 +15,31 @@ export function ServicesSection() {
           }`}
         >
           <h2 className="mb-2 font-sans text-5xl font-light tracking-tight text-foreground md:text-6xl lg:text-7xl">
-            Услуги
+            Новости
           </h2>
-          <p className="font-mono text-sm text-foreground/60 md:text-base">/ Наши компетенции</p>
+          <p className="font-mono text-sm text-foreground/60 md:text-base">/ Жизнь университета</p>
         </div>
 
         <div className="grid gap-8 md:grid-cols-2 md:gap-x-16 md:gap-y-12 lg:gap-x-24">
           {[
             {
-              title: "Веб-разработка",
-              description: "Создание современных веб-приложений любой сложности",
+              title: "День открытых дверей",
+              description: "Приглашаем абитуриентов и их родителей познакомиться с университетом 15 апреля 2027",
               direction: "top",
             },
             {
-              title: "UI/UX Дизайн",
-              description: "Проектирование удобных и красивых интерфейсов",
+              title: "Конференция по водному транспорту",
+              description: "Международная научно-практическая конференция пройдёт в мае 2027 года",
               direction: "right",
             },
             {
-              title: "Мобильные приложения",
-              description: "Кроссплатформенная разработка для iOS и Android",
+              title: "Новый учебный корпус",
+              description: "Открытие современного учебно-лабораторного комплекса для подготовки судоводителей",
               direction: "left",
             },
             {
-              title: "Консалтинг",
-              description: "Техническая экспертиза и стратегическое планирование",
+              title: "Олимпиада по навигации",
+              description: "Всероссийская студенческая олимпиада по морской навигации — регистрация открыта",
               direction: "bottom",
             },
           ].map((service, i) => (
