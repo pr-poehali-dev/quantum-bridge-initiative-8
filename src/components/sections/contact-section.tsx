@@ -81,9 +81,10 @@ export function ContactSection() {
               >
                 <div className="mb-1 flex items-center gap-2">
                   <Icon name="MapPin" className="h-3 w-3 text-foreground/60" />
-                  <span className="font-mono text-xs text-foreground/60">Адрес</span>
+                  <span className="font-mono text-xs text-foreground/60">Адреса</span>
                 </div>
-                <p className="text-base text-foreground md:text-2xl">г. Самара, ул. Неверова, д. 87/35</p>
+                <p className="text-base text-foreground md:text-xl">г. Самара, ул. Неверова, д. 87/35</p>
+                <p className="text-base text-foreground md:text-xl">г. Самара, ул. Молодогвардейская, д. 62-64</p>
               </div>
 
               <div
